@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "name": "adminas",
+      "email": "adminas@pastas.lt",
+      "password": "adminas",
+      "id": 1
+    }
+  ],
+  "favorites": []
+}

@@ -6,6 +6,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Register from "./pages/Register";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
+import RecipeDetail from "./pages/RecipeDetail.jsx";
 
 
 // Launch server: npm run server
@@ -24,6 +25,14 @@ function App() {
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/recipe/:id"
+          element={
+            <ProtectedRoute>
+              <RecipeDetail />
             </ProtectedRoute>
           }
         />

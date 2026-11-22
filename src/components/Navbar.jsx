@@ -1,4 +1,4 @@
-import { Fragment, useContext } from "react";
+import { useContext } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
@@ -17,6 +17,7 @@ function Navbar() {
                 {isAuthenticated ? (
                     <>
                         <Link to="/dashboard">Pagrindinis</Link>
+                        <Link to="/favorites">Mėgstamiausi</Link>
                         <span className="nav-user">Sveiki, {user.name}</span>
                         <button className="btn btn-small" onClick={handleLogout}>
                             Atsijungti

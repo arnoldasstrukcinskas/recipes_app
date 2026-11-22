@@ -7,6 +7,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import RecipeDetail from "./pages/RecipeDetail.jsx";
+import Favorites from "./pages/Favorites.jsx";
 
 
 // Launch server: npm run server
@@ -33,6 +34,14 @@ function App() {
           element={
             <ProtectedRoute>
               <RecipeDetail />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/favorites"
+          element={
+            <ProtectedRoute>
+              <Favorites />
             </ProtectedRoute>
           }
         />

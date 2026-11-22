@@ -1,16 +1,34 @@
-# React + Vite
+# Receptų programėlė
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+React programėlė su prisijungimu ir mėgstamiausių receptų saugojimu.
+Receptai imami iš DummyJSON API, naudotojai ir mėgstamieji saugomi `db.json` per `json-server`.
 
-Currently, two official plugins are available:
+## Versijos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Node.js 19.3.1 ar naujesnė
+- React, Vite, react-router-dom: žr. `package.json`
+- json-server: **0.17.4** (naujesnės versijos veikia kitaip ir su šiuo projektu gali neveikti)
 
-## React Compiler
+Tikslias versijas fiksuoja failas `package-lock.json`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Diegimas
 
-## Expanding the Oxlint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Paleidimas
+
+Reikia dviejų terminalų.
+
+1. Serveris (http://localhost:3001):
+
+```bash
+npm run server
+```
+
+2. React programa (http://localhost:5173):
+
+```bash
+npm run dev
+```

@@ -7,5 +7,27 @@
       "id": 1
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "userId": 1,
+      "recipeId": 1,
+      "name": "Classic Margherita Pizza",
+      "image": "https://cdn.dummyjson.com/recipe-images/1.webp",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "recipeId": 4,
+      "name": "Chicken Alfredo Pasta",
+      "image": "https://cdn.dummyjson.com/recipe-images/4.webp",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "recipeId": 13,
+      "name": "Aloo Keema",
+      "image": "https://cdn.dummyjson.com/recipe-images/13.webp",
+      "id": 4
+    }
+  ]
 }

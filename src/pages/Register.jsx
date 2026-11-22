@@ -58,6 +58,7 @@ function Register() {
                 email: emailLowerCase,
                 password: password,
             };
+
             const userResponse = await fetch(`${API}/users`, {
                 method: "POST",
                 headers: { "Content-Type": "Application/json" },
